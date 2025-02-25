@@ -1,0 +1,416 @@
+/* تنظیمات کلی صفحه */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    direction: ltr; /* جهت متن از چپ به راست برای زبان انگلیسی */
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/*.header {
+    width: 1440px;
+    height: 89px;
+    background-color: #fff;
+    color: #3F3B3B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+*/
+.border {
+    width: 1440px;
+    height: 1px;
+    background-color: #eaeaea;
+    position: absolute;
+    top: 89px;
+    left: 50%;
+    transform: translateX(-50%);
+ 
+}
+
+/* استایل لوگو */
+.logo {
+    width: 63px;
+    height: 37px;
+    position: absolute;
+    top: 26px;
+    left: 165px;
+}
+
+/* استایل منو */
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px; /* فاصله بین آیتم‌های منو */
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 32px;
+    left: 824px; /* تنظیم موقعیت دقیق منو */
+    width: 451px; /* عرض منو */
+    height: 24px; /* ارتفاع منو */
+    white-space: nowrap;
+}
+
+.nav ul li {
+    display: inline_block;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #3F3B3B; /* رنگ متن منو */
+    font-size: 14px; /* اندازه فونت */
+    font-weight: 400; /* وزن فونت */
+    line-height: 24px; /* فاصله بین خطوط */
+    letter-spacing: 0px; /* فاصله بین حروف */
+    text-align: center; /* مرکزچین کردن متن */
+    white-space: nowrap;
+}
+
+/* استایل عنوان Featured Works */
+.title {
+    width: 554px;
+    height: 81px;
+    position: absolute;
+    top: 259px;
+    left: 165px;
+    font-weight: bold;
+    font-size: 32px;
+    color: #333;
+}
+
+/* استایل متن */
+.content-text {
+    width: 560px; /* عرض متن */
+    height: 68px; /* ارتفاع */
+    position: absolute;
+    top: 380px; /* موقعیت عمودی متن */
+    left: 165px; /* موقعیت افقی متن */
+    font-weight: 400; /* وزن فونت */
+    font-size: 24px; /* اندازه فونت */
+    line-height: 34px; /* فاصله بین خطوط */
+    letter-spacing: 0px; /* فاصله بین حروف */
+    color: #3F3B3B; /* رنگ متن */
+}
+
+
+
+/* استایل برای تصویر */
+.group-image {
+    width: 1110px; /* عرض تصویر */
+    height: 560px; /* ارتفاع تصویر */
+    position: absolute; /* موقعیت‌دهی مطلق */
+    top: 644px; /* موقعیت عمودی */
+    left: 165px; /* موقعیت افقی */
+    border-radius: 5px; /* گوشه‌های گرد */
+}
+
+
+.friends-entertainment {
+    width: 236px; /* عرض متن */
+    height: 34px; /* ارتفاع متن */
+    position: absolute; /* موقعیت‌دهی مطلق برای موقعیت‌گذاری */
+    top: 1223px; /* موقعیت عمودی */
+    left: 165px; /* موقعیت افقی */
+    font-family: 'Roboto', sans-serif; /* نوع فونت */
+    font-weight: 400; /* وزن فونت */
+    font-size: 24px; /* اندازه فونت */
+    line-height: 34px; /* فاصله بین خطوط */
+    letter-spacing: 0px; /* فاصله بین حروف */
+    color: #000000; /* رنگ متن تغییر به سیاه */
+}
+
+.content-text1 {
+    width: 395px; /* عرض متن */
+    height: 56px; /* ارتفاع */
+    position: absolute;
+    top: 1276px; /* موقعیت عمودی متن */
+    left: 165px; /* موقعیت افقی متن */
+    font-weight: 400; /* وزن فونت */
+    font-size: 16px; /* اندازه فونت */
+    line-height: 28px; /* فاصله بین خطوط */
+    letter-spacing: 0px; /* فاصله بین حروف */
+    color: #959393; /* رنگ متن */
+}
+
+/* استایل برای تصویر */
+.group-image2 {
+    width: 560px; /* عرض تصویر */
+    height: 402px; /* ارتفاع تصویر */
+    position: absolute; /* موقعیت‌دهی مطلق */
+    top: 1412px; /* موقعیت عمودی */
+    left: 165px; /* موقعیت افقی */
+    border-radius: 5px; /* گوشه‌های گرد */
+}
+
+
+.friends-entertainment2 {
+    width: 236px; /* عرض متن */
+    height: 34px; /* ارتفاع متن */
+    position: absolute; /* موقعیت‌دهی مطلق برای موقعیت‌گذاری */
+    top: 1833px; /* موقعیت عمودی */
+    left: 165px; /* موقعیت افقی */
+    font-family: 'Roboto', sans-serif; /* نوع فونت */
+    font-weight: 400; /* وزن فونت */
+    font-size: 24px; /* اندازه فونت */
+    line-height: 34px; /* فاصله بین خطوط */
+    letter-spacing: 0px; /* فاصله بین حروف */
+    color: #000000; /* رنگ متن تغییر به سیاه */
+}
+
+.content-text2 {
+    width: 395px; /* عرض متن */
+    height: 56px; /* ارتفاع */
+    position: absolute;
+    top: 1886px; /* موقعیت عمودی متن */
+    left: 165px; /* موقعیت افقی متن */
+    font-weight: 400; /* وزن فونت */
+    font-size: 16px; /* اندازه فونت */
+    line-height: 28px; /* فاصله بین خطوط */
+    letter-spacing: 0px; /* فاصله بین حروف */
+    color: #959393; /* رنگ متن */
+}
+
+
+/* استایل برای تصویر */
+.group-image3 {
+    width: 650px; /* عرض تصویر */
+    height: 402px; /* ارتفاع تصویر */
+    position: absolute; /* موقعیت‌دهی مطلق */
+    top: 2022px; /* موقعیت عمودی */
+    left: 625px; /* موقعیت افقی */
+    border-radius: 5px; /* گوشه‌های گرد */
+}
+
+
+.friends-entertainment3 {
+    width: 236px; /* عرض متن */
+    height: 34px; /* ارتفاع متن */
+    position: absolute; /* موقعیت‌دهی مطلق برای موقعیت‌گذاری */
+    top: 2443px; /* موقعیت عمودی */
+    left: 625px; /* موقعیت افقی */
+    font-family: 'Roboto', sans-serif; /* نوع فونت */
+    font-weight: 400; /* وزن فونت */
+    font-size: 24px; /* اندازه فونت */
+    line-height: 34px; /* فاصله بین خطوط */
+    letter-spacing: 0px; /* فاصله بین حروف */
+    color: #000000; /* رنگ متن تغییر به سیاه */
+}
+
+.content-text3 {
+    width: 395px; /* عرض متن */
+    height: 56px; /* ارتفاع */
+    position: absolute;
+    top: 2496px; /* موقعیت عمودی متن */
+    left: 625px; /* موقعیت افقی متن */
+    font-weight: 400; /* وزن فونت */
+    font-size: 16px; /* اندازه فونت */
+    line-height: 28px; /* فاصله بین خطوط */
+    letter-spacing: 0px; /* فاصله بین حروف */
+    color: #959393; /* رنگ متن */
+}
+
+.group-image4 {
+    width: 1110px; /* عرض تصویر */
+    height: 560px; /* ارتفاع تصویر */
+    position: absolute; /* موقعیت‌دهی مطلق */
+    top: 2632px; /* موقعیت عمودی */
+    left: 165px; /* موقعیت افقی */
+    border-radius: 5px; /* گوشه‌های گرد */
+}
+
+
+.friends-entertainment4 {
+    width: 236px; /* عرض متن */
+    height: 34px; /* ارتفاع متن */
+    position: absolute; /* موقعیت‌دهی مطلق برای موقعیت‌گذاری */
+    top: 3211px; /* موقعیت عمودی */
+    left: 165px; /* موقعیت افقی */
+    font-family: 'Roboto', sans-serif; /* نوع فونت */
+    font-weight: 400; /* وزن فونت */
+    font-size: 24px; /* اندازه فونت */
+    line-height: 34px; /* فاصله بین خطوط */
+    letter-spacing: 0px; /* فاصله بین حروف */
+    color: #000000; /* رنگ متن تغییر به سیاه */
+}
+
+.content-text4 {
+    width: 395px; /* عرض متن */
+    height: 56px; /* ارتفاع */
+    position: absolute;
+    top: 3264px; /* موقعیت عمودی متن */
+    left: 165px; /* موقعیت افقی متن */
+    font-weight: 400; /* وزن فونت */
+    font-size: 16px; /* اندازه فونت */
+    line-height: 28px; /* فاصله بین خطوط */
+    letter-spacing: 0px; /* فاصله بین حروف */
+    color: #959393; /* رنگ متن */
+}
+
+.group-image5 {
+    width: 560px; /* عرض تصویر */
+    height: 402px; /* ارتفاع تصویر */
+    position: absolute; /* موقعیت‌دهی مطلق */
+    top: 3400px; /* موقعیت عمودی */
+    left: 165px; /* موقعیت افقی */
+    border-radius: 5px; /* گوشه‌های گرد */
+}
+
+
+.friends-entertainment5 {
+    width: 236px; /* عرض متن */
+    height: 34px; /* ارتفاع متن */
+    position: absolute; /* موقعیت‌دهی مطلق برای موقعیت‌گذاری */
+    top: 3821px; /* موقعیت عمودی */
+    left: 165px; /* موقعیت افقی */
+    font-family: 'Roboto', sans-serif; /* نوع فونت */
+    font-weight: 400; /* وزن فونت */
+    font-size: 24px; /* اندازه فونت */
+    line-height: 34px; /* فاصله بین خطوط */
+    letter-spacing: 0px; /* فاصله بین حروف */
+    color: #000000; /* رنگ متن تغییر به سیاه */
+}
+
+.content-text5 {
+    width: 395px; /* عرض متن */
+    height: 56px; /* ارتفاع */
+    position: absolute;
+    top: 3874px; /* موقعیت عمودی متن */
+    left: 165px; /* موقعیت افقی متن */
+    font-weight: 400; /* وزن فونت */
+    font-size: 16px; /* اندازه فونت */
+    line-height: 28px; /* فاصله بین خطوط */
+    letter-spacing: 0px; /* فاصله بین حروف */
+    color: #959393; /* رنگ متن */
+}
+
+/* استایل برای تصویر */
+.group-image6 {
+    width: 650px; /* عرض تصویر */
+    height: 402px; /* ارتفاع تصویر */
+    position: absolute; /* موقعیت‌دهی مطلق */
+    top: 4010px; /* موقعیت عمودی */
+    left: 625px; /* موقعیت افقی */
+    border-radius: 5px; /* گوشه‌های گرد */
+}
+
+
+.friends-entertainment6 {
+    width: 236px; /* عرض متن */
+    height: 34px; /* ارتفاع متن */
+    position: absolute; /* موقعیت‌دهی مطلق برای موقعیت‌گذاری */
+    top: 4431px; /* موقعیت عمودی */
+    left: 625px; /* موقعیت افقی */
+    font-family: 'Roboto', sans-serif; /* نوع فونت */
+    font-weight: 400; /* وزن فونت */
+    font-size: 24px; /* اندازه فونت */
+    line-height: 34px; /* فاصله بین خطوط */
+    letter-spacing: 0px; /* فاصله بین حروف */
+    color: #000000; /* رنگ متن تغییر به سیاه */
+}
+
+.content-text6 {
+    width: 395px; /* عرض متن */
+    height: 56px; /* ارتفاع */
+    position: absolute;
+    top: 4484px; /* موقعیت عمودی متن */
+    left: 625px; /* موقعیت افقی متن */
+    font-weight: 400; /* وزن فونت */
+    font-size: 16px; /* اندازه فونت */
+    line-height: 28px; /* فاصله بین خطوط */
+    letter-spacing: 0px; /* فاصله بین حروف */
+    color: #959393; /* رنگ متن */
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* footer 
+.footer {
+    clear: both;
+    border-top: 1px solid #CDCECF;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1110px;
+    margin: 40px auto;
+}
+    */
+
+.footer-left .logo {
+    width: 63px;
+    margin-bottom: 20px;
+}
+
+.footer-left p {
+    font-size: 24px;
+    color: #3F3B3B;
+    margin-bottom: 5px;
+}
+
+.footer-left h3 {
+    font-size: 24px;
+    color: #101010;
+    margin-bottom: 20px;
+}
+
+.footer-left button {
+    width: 224px;
+    background-color: #2F5BD9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 88px;
+}
+
+.footer-right a {
+    text-decoration: none;
+    color: #3F3B3B;
+}
+
+.footer-bottom {
+    width: 100%;
+    border-top: 1px solid #CDCECF;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1110px;
+    margin: 25px auto;
+    align-items: center;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.social-icons {
+    width: 23px;
+}
+
